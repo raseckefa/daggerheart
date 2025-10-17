@@ -1,0 +1,272 @@
+{
+  "clank": {
+    "name": "Clank",
+    "features": [
+      {
+        "id": "construct-resilience",
+        "name": "Construct Resilience",
+        "description": "You have advantage on rolls to resist being poisoned or diseased."
+      },
+      {
+        "id": "integrated-tools",
+        "name": "Integrated Tools",
+        "description": "You can spend a Hope to produce a tool needed for a task from your mechanical body."
+      }
+    ]
+  },
+  "drakona": {
+    "name": "Drakona",
+    "features": [
+      {
+        "id": "draconic-resistance",
+        "name": "Draconic Resistance",
+        "description": "Choose a damage type. You have resistance to that damage type."
+      },
+      {
+        "id": "wings",
+        "name": "Wings",
+        "description": "You can glide, falling safely from any height and moving up to your move distance horizontally."
+      }
+    ]
+  },
+  "dwarf": {
+    "name": "Dwarf",
+    "features": [
+      {
+        "id": "stonecunning",
+        "name": "Stonecunning",
+        "description": "You have advantage on rolls related to stonework, mining, and underground environments."
+      },
+      {
+        "id": "dwarven-resilience",
+        "name": "Dwarven Resilience",
+        "description": "You have advantage on rolls to resist being poisoned."
+      }
+    ]
+  },
+  "elf": {
+    "name": "Elf",
+    "features": [
+      {
+        "id": "fey-ancestry",
+        "name": "Fey Ancestry",
+        "description": "You have advantage on rolls to resist being charmed or put to sleep."
+      },
+      {
+        "id": "keen-senses",
+        "name": "Keen Senses",
+        "description": "You have advantage on Instinct rolls to notice hidden creatures or objects."
+      }
+    ]
+  },
+  "faerie": {
+    "name": "Faerie",
+    "features": [
+      {
+        "id": "flight",
+        "name": "Flight",
+        "description": "You can fly up to your move distance each turn."
+      },
+      {
+        "id": "pixie-dust",
+        "name": "Pixie Dust",
+        "description": "Once per long rest, you can grant an ally the ability to fly for one scene."
+      }
+    ]
+  },
+  "faun": {
+    "name": "Faun",
+    "features": [
+      {
+        "id": "nature-walker",
+        "name": "Nature Walker",
+        "description": "Difficult terrain made of natural materials doesn't slow your movement."
+      },
+      {
+        "id": "forest-magic",
+        "name": "Forest Magic",
+        "description": "You know one Sage domain card of your choice at Level 1."
+      }
+    ]
+  },
+  "firbolg": {
+    "name": "Firbolg",
+    "features": [
+      {
+        "id": "gentle-giant",
+        "name": "Gentle Giant",
+        "description": "You have advantage on rolls to calm or befriend animals."
+      },
+      {
+        "id": "powerful-build",
+        "name": "Powerful Build",
+        "description": "You count as one size larger for carrying capacity and lifting."
+      }
+    ]
+  },
+  "fungril": {
+    "name": "Fungril",
+    "features": [
+      {
+        "id": "spore-cloud",
+        "name": "Spore Cloud",
+        "description": "Once per short rest, you can release a cloud of spores that obscures vision in a Close area."
+      },
+      {
+        "id": "fungal-network",
+        "name": "Fungal Network",
+        "description": "You can communicate with other Fungrils telepathically within Far range."
+      }
+    ]
+  },
+  "galapa": {
+    "name": "Galapa",
+    "features": [
+      {
+        "id": "shell-defense",
+        "name": "Shell Defense",
+        "description": "You can retreat into your shell, gaining +2 armor but becoming immobile."
+      },
+      {
+        "id": "aquatic",
+        "name": "Aquatic",
+        "description": "You can breathe underwater and have a swim speed equal to your move distance."
+      }
+    ]
+  },
+  "giant": {
+    "name": "Giant",
+    "features": [
+      {
+        "id": "towering-strength",
+        "name": "Towering Strength",
+        "description": "You have advantage on Strength rolls to lift, push, or break objects."
+      },
+      {
+        "id": "giant-reach",
+        "name": "Giant Reach",
+        "description": "Your melee attacks have +1 range increment."
+      }
+    ]
+  },
+  "goblin": {
+    "name": "Goblin",
+    "features": [
+      {
+        "id": "surefooted",
+        "name": "Surefooted",
+        "description": "You ignore disadvantage on Agility rolls."
+      },
+      {
+        "id": "danger-sense",
+        "name": "Danger Sense",
+        "description": "Once per rest, mark a Stress to force an adversary to reroll an attack against you or an ally within Very Close range."
+      }
+    ]
+  },
+  "halfling": {
+    "name": "Halfling",
+    "features": [
+      {
+        "id": "lucky",
+        "name": "Lucky",
+        "description": "When you roll with Fear, you can reroll one die once."
+      },
+      {
+        "id": "nimble",
+        "name": "Nimble",
+        "description": "You can move through spaces occupied by larger creatures."
+      }
+    ]
+  },
+  "human": {
+    "name": "Human",
+    "features": [
+      {
+        "id": "versatile",
+        "name": "Versatile",
+        "description": "You gain +1 to two different experiences of your choice."
+      },
+      {
+        "id": "adaptable",
+        "name": "Adaptable",
+        "description": "You gain one additional Foundation card from any domain at character creation."
+      }
+    ]
+  },
+  "infernis": {
+    "name": "Infernis",
+    "features": [
+      {
+        "id": "fire-resistance",
+        "name": "Fire Resistance",
+        "description": "You have resistance to fire damage."
+      },
+      {
+        "id": "hellish-rebuke",
+        "name": "Hellish Rebuke",
+        "description": "When you take damage, you can spend a Hope to deal 1d6 fire damage to the attacker."
+      }
+    ]
+  },
+  "katari": {
+    "name": "Katari",
+    "features": [
+      {
+        "id": "feline-agility",
+        "name": "Feline Agility",
+        "description": "You have advantage on Agility rolls to balance, jump, or climb."
+      },
+      {
+        "id": "claws",
+        "name": "Claws",
+        "description": "Your unarmed strikes deal 1d6 physical damage instead of 1d4."
+      }
+    ]
+  },
+  "orc": {
+    "name": "Orc",
+    "features": [
+      {
+        "id": "sturdy",
+        "name": "Sturdy",
+        "description": "When you have 1 Hit Point remaining, attacks against you have disadvantage."
+      },
+      {
+        "id": "tusks",
+        "name": "Tusks",
+        "description": "When you succeed on an attack against a target within Melee range, you can spend a Hope to gore the target with your tusks, dealing an extra 1d6 damage."
+      }
+    ]
+  },
+  "ribbet": {
+    "name": "Ribbet",
+    "features": [
+      {
+        "id": "amphibious",
+        "name": "Amphibious",
+        "description": "You can breathe air and water, and have a swim speed equal to your move distance."
+      },
+      {
+        "id": "standing-leap",
+        "name": "Standing Leap",
+        "description": "Your jump distance is doubled without a running start."
+      }
+    ]
+  },
+  "simiah": {
+    "name": "Simiah",
+    "features": [
+      {
+        "id": "prehensile-tail",
+        "name": "Prehensile Tail",
+        "description": "You can use your tail to hold and manipulate objects, leaving your hands free."
+      },
+      {
+        "id": "tree-climber",
+        "name": "Tree Climber",
+        "description": "You have a climb speed equal to your move distance when climbing trees or similar structures."
+      }
+    ]
+  }
+}

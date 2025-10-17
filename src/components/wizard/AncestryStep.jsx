@@ -3,6 +3,8 @@ import Card from '../Card'
 import CardModal from '../CardModal'
 import CardCarousel from '../CardCarousel'
 import CardCarouselDesktop from '../CardCarouselDesktop'
+import MixedAncestryCard from '../MixedAncestryCard'
+import MixedAncestryWizard from './MixedAncestryWizard'
 import ancestriesData from '../../data/ancestries.json'
 
 /**
@@ -11,6 +13,7 @@ import ancestriesData from '../../data/ancestries.json'
 function AncestryStep({ selectedAncestry, onSelect, onNext }) {
   const [modalCard, setModalCard] = useState(null)
   const [searchTerm, setSearchTerm] = useState('')
+  const [showMixedWizard, setShowMixedWizard] = useState(false)
 
   // Filtrar ancestralidades baseado na busca
   const filteredAncestries = ancestriesData.filter(ancestry =>
@@ -18,11 +21,30 @@ function AncestryStep({ selectedAncestry, onSelect, onNext }) {
   )
 
   const handleCardClick = (ancestry) => {
-    setModalCard(ancestry)
+    // Se for Mixed Ancestry, abrir wizard especial
+    if (ancestry.isMixed) {
+      setShowMixedWizard(true)
+    } else {
+      setModalCard(ancestry)
+    }
   }
 
   const handleSelectFromModal = (ancestry) => {
-    onSelect(ancestry)
+    // Se for Mixed Ancestry, abrir wizard especial
+    if (ancestry.isMixed) {
+      setShowMixedWizard(true)
+    } else {
+      onSelect(ancestry)
+    }
+  }
+
+  const handleMixedAncestryComplete = (mixedData) => {
+    setShowMixedWizard(false)
+    onSelect(mixedData)
+  }
+
+  const handleMixedAncestryCancel = () => {
+    setShowMixedWizard(false)
   }
 
   const handleCloseModal = () => {
@@ -32,6 +54,16 @@ function AncestryStep({ selectedAncestry, onSelect, onNext }) {
   const isSelected = (ancestry) => {
     if (!ancestry || !selectedAncestry) return false
     return selectedAncestry.id === ancestry.id
+  }
+
+  // Se Mixed Ancestry wizard está aberto, mostrar ele
+  if (showMixedWizard) {
+    return (
+      <MixedAncestryWizard
+        onComplete={handleMixedAncestryComplete}
+        onCancel={handleMixedAncestryCancel}
+      />
+    )
   }
 
   return (
@@ -44,6 +76,22 @@ function AncestryStep({ selectedAncestry, onSelect, onNext }) {
         <p className="text-slate-400 text-lg">
           Your ancestry determines your character's heritage and physical traits
         </p>
+      </div>
+
+      {/* Search Bar */}
+      <div className="max-w-md mx-auto">
+        <div className="relative">
+          <input
+            type="text"
+            placeholder="Search ancestries..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full px-4 py-3 pl-10 bg-slate-800 border-2 border-slate-700 rounded-lg text-slate-100 placeholder-slate-500 focus:border-dagger-purple focus:outline-none transition-colors"
+          />
+          <svg className="w-5 h-5 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
       </div>
 
       {/* Mobile View - Carousel (1 card) */}

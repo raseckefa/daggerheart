@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import Card from './Card'
+import CardRenderer from './CardRenderer'
 
 /**
  * CardCarousel - Carousel horizontal para visualização mobile
@@ -104,9 +104,8 @@ function CardCarousel({ cards, selectedCard, onCardClick, onSelect }) {
         {/* Card Display */}
         <div className="flex justify-center px-4">
           <div className="transform transition-all duration-300">
-            <Card
-              image={currentCard.image}
-              name={currentCard.name}
+            <CardRenderer
+              card={currentCard}
               selected={isSelected(currentCard)}
               onClick={handleCardClick}
               size="large"

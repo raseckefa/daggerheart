@@ -106,5 +106,13 @@
     "name": "Simiah",
     "image": "/assets/cards/ancestry/simiah.png",
     "type": "ancestry"
+  },
+  {
+    "id": "mixed-ancestry",
+    "name": "Mixed Ancestry",
+    "image": "/assets/cards/ancestry/mixed-ancestry.png",
+    "type": "ancestry",
+    "isMixed": true,
+    "description": "Choose traits from two different ancestries to create your unique heritage"
   }
 ]

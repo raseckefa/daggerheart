@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import Card from './Card'
+import CardRenderer from './CardRenderer'
 
 /**
  * CardCarouselDesktop - Carousel para desktop mostrando 3 cards por vez
@@ -67,10 +67,9 @@ function CardCarouselDesktop({ cards, selectedCard, onCardClick, onSelect }) {
         {/* Cards Display - 3 por vez */}
         <div className="grid grid-cols-3 gap-8 justify-items-center px-4">
           {visibleCards.map((card) => (
-            <Card
+            <CardRenderer
               key={card.id}
-              image={card.image}
-              name={card.name}
+              card={card}
               selected={isSelected(card)}
               onClick={() => onCardClick(card)}
               size="large"
