@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Card from '../Card'
 import CardModal from '../CardModal'
+import CardCarousel from '../CardCarousel'
+import CardCarouselDesktop from '../CardCarouselDesktop'
 import communitiesData from '../../data/communities.json'
 
 /**
@@ -44,29 +46,24 @@ function CommunityStep({ selectedCommunity, onSelect, onNext, onBack }) {
         </p>
       </div>
 
-      {/* Search Bar */}
-      <div className="max-w-md mx-auto">
-        <input
-          type="text"
-          placeholder="Search communities..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full px-4 py-3 bg-slate-800 border-2 border-slate-700 rounded-lg text-slate-100 placeholder-slate-500 focus:border-dagger-purple focus:outline-none transition-colors"
+      {/* Mobile View - Carousel (1 card) */}
+      <div className="md:hidden">
+        <CardCarousel
+          cards={filteredCommunities}
+          selectedCard={selectedCommunity}
+          onCardClick={handleCardClick}
+          onSelect={onSelect}
         />
       </div>
 
-      {/* Cards Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6 justify-items-center">
-        {filteredCommunities.map((community) => (
-          <Card
-            key={community.id}
-            image={community.image}
-            name={community.name}
-            selected={isSelected(community)}
-            onClick={() => handleCardClick(community)}
-            size="medium"
-          />
-        ))}
+      {/* Desktop View - Carousel (3 cards) */}
+      <div className="hidden md:block">
+        <CardCarouselDesktop
+          cards={filteredCommunities}
+          selectedCard={selectedCommunity}
+          onCardClick={handleCardClick}
+          onSelect={onSelect}
+        />
       </div>
 
       {/* No results */}
@@ -75,38 +72,6 @@ function CommunityStep({ selectedCommunity, onSelect, onNext, onBack }) {
           <p className="text-slate-400 text-lg">
             No communities found matching "{searchTerm}"
           </p>
-        </div>
-      )}
-
-      {/* Selected Info */}
-      {selectedCommunity && (
-        <div className="bg-dagger-card border-2 border-dagger-gold rounded-lg p-6 max-w-2xl mx-auto">
-          <div className="flex items-center gap-4">
-            <div className="w-20 h-28 flex-shrink-0">
-              <img
-                src={selectedCommunity.image}
-                alt={selectedCommunity.name}
-                className="w-full h-full object-cover rounded"
-              />
-            </div>
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold text-amber-400 mb-1">
-                Selected: {selectedCommunity.name}
-              </h3>
-              <p className="text-slate-400">
-                Click "Next" to continue to Class selection
-              </p>
-            </div>
-            <button
-              onClick={() => onSelect(null)}
-              className="text-slate-400 hover:text-slate-100 transition-colors"
-              title="Clear selection"
-            >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
         </div>
       )}
 
