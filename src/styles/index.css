@@ -4,7 +4,56 @@
 
 @layer base {
   body {
-    @apply bg-slate-900 text-slate-100 antialiased;
+    @apply bg-slate-900 text-slate-100 antialiased transition-colors duration-200;
+  }
+
+  /* Light mode styles */
+  .light body {
+    @apply bg-slate-50 text-slate-900;
+  }
+
+  .light .bg-slate-900 {
+    @apply bg-slate-50;
+  }
+
+  .light .bg-slate-800 {
+    @apply bg-white;
+  }
+
+  .light .bg-slate-700 {
+    @apply bg-slate-100;
+  }
+
+  .light .bg-dagger-card {
+    @apply bg-white;
+  }
+
+  .light .text-slate-100 {
+    @apply text-slate-900;
+  }
+
+  .light .text-slate-200 {
+    @apply text-slate-800;
+  }
+
+  .light .text-slate-300 {
+    @apply text-slate-700;
+  }
+
+  .light .text-slate-400 {
+    @apply text-slate-600;
+  }
+
+  .light .border-slate-700 {
+    @apply border-slate-300;
+  }
+
+  .light .border-slate-600 {
+    @apply border-slate-400;
+  }
+
+  .light .modal-backdrop {
+    @apply bg-white/80;
   }
 }
 

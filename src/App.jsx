@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import { ThemeProvider } from './contexts/ThemeContext'
 import CharacterWizard from './components/wizard/CharacterWizard'
+import ThemeToggle from './components/ThemeToggle'
 
 function App() {
   const [isWizardOpen, setIsWizardOpen] = useState(false)
@@ -24,15 +26,20 @@ function App() {
 
   if (isWizardOpen) {
     return (
-      <CharacterWizard
-        onComplete={handleCompleteWizard}
-        onCancel={handleCancelWizard}
-      />
+      <ThemeProvider>
+        <ThemeToggle />
+        <CharacterWizard
+          onComplete={handleCompleteWizard}
+          onCancel={handleCancelWizard}
+        />
+      </ThemeProvider>
     )
   }
 
   return (
-    <div className="min-h-screen bg-slate-900 text-slate-100">
+    <ThemeProvider>
+      <ThemeToggle />
+      <div className="min-h-screen bg-slate-900 text-slate-100">
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-12">
           <h1 className="text-5xl font-bold text-amber-400 mb-2">
@@ -78,6 +85,7 @@ function App() {
         </main>
       </div>
     </div>
+    </ThemeProvider>
   )
 }
 
