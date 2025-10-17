@@ -62,31 +62,40 @@ function CommunityStep({ selectedCommunity, onSelect, onNext, onBack }) {
         </div>
       </div>
 
-      {/* Mobile View - Carousel (1 card) */}
-      <div className="md:hidden">
-        <CardCarousel
-          cards={filteredCommunities}
-          selectedCard={selectedCommunity}
-          onCardClick={handleCardClick}
-          onSelect={onSelect}
-        />
-      </div>
+      {/* Carousels ou mensagem de "sem resultados" */}
+      {filteredCommunities.length > 0 ? (
+        <>
+          {/* Mobile View - Carousel (1 card) */}
+          <div className="md:hidden">
+            <CardCarousel
+              cards={filteredCommunities}
+              selectedCard={selectedCommunity}
+              onCardClick={handleCardClick}
+              onSelect={onSelect}
+            />
+          </div>
 
-      {/* Desktop View - Carousel (3 cards) */}
-      <div className="hidden md:block">
-        <CardCarouselDesktop
-          cards={filteredCommunities}
-          selectedCard={selectedCommunity}
-          onCardClick={handleCardClick}
-          onSelect={onSelect}
-        />
-      </div>
-
-      {/* No results */}
-      {filteredCommunities.length === 0 && (
+          {/* Desktop View - Carousel (3 cards) */}
+          <div className="hidden md:block">
+            <CardCarouselDesktop
+              cards={filteredCommunities}
+              selectedCard={selectedCommunity}
+              onCardClick={handleCardClick}
+              onSelect={onSelect}
+            />
+          </div>
+        </>
+      ) : (
+        /* No results */
         <div className="text-center py-12">
-          <p className="text-slate-400 text-lg">
-            No communities found matching "{searchTerm}"
+          <svg className="w-16 h-16 mx-auto text-slate-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+          </svg>
+          <p className="text-slate-400 text-lg mb-2">
+            No communities found
+          </p>
+          <p className="text-slate-500 text-sm">
+            Try searching for "{searchTerm}" with different terms
           </p>
         </div>
       )}

@@ -94,31 +94,40 @@ function AncestryStep({ selectedAncestry, onSelect, onNext }) {
         </div>
       </div>
 
-      {/* Mobile View - Carousel (1 card) */}
-      <div className="md:hidden">
-        <CardCarousel
-          cards={filteredAncestries}
-          selectedCard={selectedAncestry}
-          onCardClick={handleCardClick}
-          onSelect={onSelect}
-        />
-      </div>
+      {/* Carousels ou mensagem de "sem resultados" */}
+      {filteredAncestries.length > 0 ? (
+        <>
+          {/* Mobile View - Carousel (1 card) */}
+          <div className="md:hidden">
+            <CardCarousel
+              cards={filteredAncestries}
+              selectedCard={selectedAncestry}
+              onCardClick={handleCardClick}
+              onSelect={onSelect}
+            />
+          </div>
 
-      {/* Desktop View - Carousel (3 cards) */}
-      <div className="hidden md:block">
-        <CardCarouselDesktop
-          cards={filteredAncestries}
-          selectedCard={selectedAncestry}
-          onCardClick={handleCardClick}
-          onSelect={onSelect}
-        />
-      </div>
-
-      {/* No results */}
-      {filteredAncestries.length === 0 && (
+          {/* Desktop View - Carousel (3 cards) */}
+          <div className="hidden md:block">
+            <CardCarouselDesktop
+              cards={filteredAncestries}
+              selectedCard={selectedAncestry}
+              onCardClick={handleCardClick}
+              onSelect={onSelect}
+            />
+          </div>
+        </>
+      ) : (
+        /* No results */
         <div className="text-center py-12">
-          <p className="text-slate-400 text-lg">
-            No ancestries found matching "{searchTerm}"
+          <svg className="w-16 h-16 mx-auto text-slate-600 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <p className="text-slate-400 text-lg mb-2">
+            No ancestries found
+          </p>
+          <p className="text-slate-500 text-sm">
+            Try searching for "{searchTerm}" with different terms
           </p>
         </div>
       )}
