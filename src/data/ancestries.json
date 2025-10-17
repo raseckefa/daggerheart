@@ -1,0 +1,110 @@
+[
+  {
+    "id": "clank",
+    "name": "Clank",
+    "image": "/assets/cards/ancestry/clank.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "drakona",
+    "name": "Drakona",
+    "image": "/assets/cards/ancestry/drakona.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "dwarf",
+    "name": "Dwarf",
+    "image": "/assets/cards/ancestry/dwarf.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "elf",
+    "name": "Elf",
+    "image": "/assets/cards/ancestry/elf.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "faerie",
+    "name": "Faerie",
+    "image": "/assets/cards/ancestry/faerie.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "faun",
+    "name": "Faun",
+    "image": "/assets/cards/ancestry/faun.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "firbolg",
+    "name": "Firbolg",
+    "image": "/assets/cards/ancestry/firbolg.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "fungril",
+    "name": "Fungril",
+    "image": "/assets/cards/ancestry/fungril.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "galapa",
+    "name": "Galapa",
+    "image": "/assets/cards/ancestry/galapa.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "giant",
+    "name": "Giant",
+    "image": "/assets/cards/ancestry/giant.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "goblin",
+    "name": "Goblin",
+    "image": "/assets/cards/ancestry/goblin.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "halfling",
+    "name": "Halfling",
+    "image": "/assets/cards/ancestry/halfling.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "human",
+    "name": "Human",
+    "image": "/assets/cards/ancestry/human.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "infernis",
+    "name": "Infernis",
+    "image": "/assets/cards/ancestry/infernis.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "katari",
+    "name": "Katari",
+    "image": "/assets/cards/ancestry/katari.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "orc",
+    "name": "Orc",
+    "image": "/assets/cards/ancestry/orc.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "ribbet",
+    "name": "Ribbet",
+    "image": "/assets/cards/ancestry/ribbet.png",
+    "type": "ancestry"
+  },
+  {
+    "id": "simiah",
+    "name": "Simiah",
+    "image": "/assets/cards/ancestry/simiah.png",
+    "type": "ancestry"
+  }
+]

@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-900 text-slate-100 antialiased;
+  }
+}
+
+@layer components {
+  /* Card base styles */
+  .card {
+    @apply relative overflow-hidden rounded-lg transition-all duration-200 cursor-pointer;
+    @apply border-2 border-transparent;
+  }
+
+  .card:hover {
+    @apply -translate-y-2 scale-105 shadow-card-hover;
+    @apply border-dagger-purple shadow-glow-purple;
+    z-index: 10;
+  }
+
+  .card-selected {
+    @apply border-dagger-gold shadow-glow-gold;
+    @apply animate-pulse-glow;
+  }
+
+  .card-disabled {
+    @apply opacity-40 grayscale cursor-not-allowed;
+  }
+
+  .card-disabled:hover {
+    @apply translate-y-0 scale-100 shadow-none border-transparent;
+  }
+
+  /* Backdrop for modals */
+  .modal-backdrop {
+    @apply fixed inset-0 bg-black/80 backdrop-blur-sm z-40;
+    @apply flex items-center justify-center p-4;
+  }
+
+  /* Modal card */
+  .modal-card {
+    @apply bg-dagger-card rounded-xl shadow-2xl;
+    @apply border-2 border-dagger-gold;
+    @apply max-w-2xl w-full max-h-[90vh] overflow-y-auto;
+    @apply animate-card-reveal;
+  }
+
+  /* Button styles */
+  .btn {
+    @apply px-6 py-3 rounded-lg font-bold transition-all duration-200;
+    @apply transform hover:scale-105 active:scale-95;
+  }
+
+  .btn-primary {
+    @apply bg-amber-500 hover:bg-amber-600 text-slate-900;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-700 hover:bg-slate-600 text-slate-100;
+  }
+
+  .btn-outline {
+    @apply border-2 border-dagger-gold text-dagger-gold;
+    @apply hover:bg-dagger-gold hover:text-slate-900;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500;
+}

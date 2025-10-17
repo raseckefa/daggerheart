@@ -1,0 +1,56 @@
+[
+  {
+    "id": "highborne",
+    "name": "Highborne",
+    "image": "/assets/cards/community/highborne.png",
+    "type": "community"
+  },
+  {
+    "id": "loreborne",
+    "name": "Loreborne",
+    "image": "/assets/cards/community/loreborne.png",
+    "type": "community"
+  },
+  {
+    "id": "orderborne",
+    "name": "Orderborne",
+    "image": "/assets/cards/community/orderborne.png",
+    "type": "community"
+  },
+  {
+    "id": "ridgeborne",
+    "name": "Ridgeborne",
+    "image": "/assets/cards/community/ridgeborne.png",
+    "type": "community"
+  },
+  {
+    "id": "seaborne",
+    "name": "Seaborne",
+    "image": "/assets/cards/community/seaborne.png",
+    "type": "community"
+  },
+  {
+    "id": "slyborne",
+    "name": "Slyborne",
+    "image": "/assets/cards/community/slyborne.png",
+    "type": "community"
+  },
+  {
+    "id": "underborne",
+    "name": "Underborne",
+    "image": "/assets/cards/community/underborne.png",
+    "type": "community"
+  },
+  {
+    "id": "wanderborne",
+    "name": "Wanderborne",
+    "image": "/assets/cards/community/wanderborne.png",
+    "type": "community"
+  },
+  {
+    "id": "wildborne",
+    "name": "Wildborne",
+    "image": "/assets/cards/community/wildborne.png",
+    "type": "community"
+  }
+]

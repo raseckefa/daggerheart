@@ -1,0 +1,326 @@
+[
+  {
+    "id": "bard-troubadour-(foundation)",
+    "name": "Bard Troubadour (foundation)",
+    "image": "/assets/cards/subclass/bard-troubadour-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "bard-troubadour-(mastery)",
+    "name": "Bard Troubadour (mastery)",
+    "image": "/assets/cards/subclass/bard-troubadour-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "bard-troubadour-(specialization)",
+    "name": "Bard Troubadour (specialization)",
+    "image": "/assets/cards/subclass/bard-troubadour-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "bard-wordsmith-(foundation)",
+    "name": "Bard Wordsmith (foundation)",
+    "image": "/assets/cards/subclass/bard-wordsmith-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "bard-wordsmith-(mastery)",
+    "name": "Bard Wordsmith (mastery)",
+    "image": "/assets/cards/subclass/bard-wordsmith-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "bard-wordsmith-(specialization)",
+    "name": "Bard Wordsmith (specialization)",
+    "image": "/assets/cards/subclass/bard-wordsmith-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "druid-warden-of-renewal-(foundation)",
+    "name": "Druid Warden Of Renewal (foundation)",
+    "image": "/assets/cards/subclass/druid-warden-of-renewal-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "druid-warden-of-renewal-(mastery)",
+    "name": "Druid Warden Of Renewal (mastery)",
+    "image": "/assets/cards/subclass/druid-warden-of-renewal-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "druid-warden-of-renewal-(specialization)",
+    "name": "Druid Warden Of Renewal (specialization)",
+    "image": "/assets/cards/subclass/druid-warden-of-renewal-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "druid-warden-of-the-elements-(foundation)",
+    "name": "Druid Warden Of The Elements (foundation)",
+    "image": "/assets/cards/subclass/druid-warden-of-the-elements-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "druid-warden-of-the-elements-(mastery)",
+    "name": "Druid Warden Of The Elements (mastery)",
+    "image": "/assets/cards/subclass/druid-warden-of-the-elements-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "druid-warden-of-the-elements-(specialization)",
+    "name": "Druid Warden Of The Elements (specialization)",
+    "image": "/assets/cards/subclass/druid-warden-of-the-elements-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "guadian-stalwart-(foundation)",
+    "name": "Guadian Stalwart (foundation)",
+    "image": "/assets/cards/subclass/guadian-stalwart-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "guadian-stalwart-(mastery)",
+    "name": "Guadian Stalwart (mastery)",
+    "image": "/assets/cards/subclass/guadian-stalwart-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "guadian-stalwart-(specialization)",
+    "name": "Guadian Stalwart (specialization)",
+    "image": "/assets/cards/subclass/guadian-stalwart-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "guardian-vengeance-(foundation)",
+    "name": "Guardian Vengeance (foundation)",
+    "image": "/assets/cards/subclass/guardian-vengeance-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "guardian-vengeance-(mastery)",
+    "name": "Guardian Vengeance (mastery)",
+    "image": "/assets/cards/subclass/guardian-vengeance-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "guardian-vengeance-(specialization)",
+    "name": "Guardian Vengeance (specialization)",
+    "image": "/assets/cards/subclass/guardian-vengeance-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "ranger-beastbound-(foundation)",
+    "name": "Ranger Beastbound (foundation)",
+    "image": "/assets/cards/subclass/ranger-beastbound-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "ranger-beastbound-(mastery)",
+    "name": "Ranger Beastbound (mastery)",
+    "image": "/assets/cards/subclass/ranger-beastbound-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "ranger-beastbound-(specialization)",
+    "name": "Ranger Beastbound (specialization)",
+    "image": "/assets/cards/subclass/ranger-beastbound-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "ranger-wayfinder-(foundation)",
+    "name": "Ranger Wayfinder (foundation)",
+    "image": "/assets/cards/subclass/ranger-wayfinder-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "ranger-wayfinder-(mastery)",
+    "name": "Ranger Wayfinder (mastery)",
+    "image": "/assets/cards/subclass/ranger-wayfinder-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "ranger-wayfinder-(specialization)",
+    "name": "Ranger Wayfinder (specialization)",
+    "image": "/assets/cards/subclass/ranger-wayfinder-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "rogue-nightwalker-(foundation)",
+    "name": "Rogue Nightwalker (foundation)",
+    "image": "/assets/cards/subclass/rogue-nightwalker-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "rogue-nightwalker-(mastery)",
+    "name": "Rogue Nightwalker (mastery)",
+    "image": "/assets/cards/subclass/rogue-nightwalker-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "rogue-nightwalker-(specialization)",
+    "name": "Rogue Nightwalker (specialization)",
+    "image": "/assets/cards/subclass/rogue-nightwalker-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "rogue-syndicate-(foundation)",
+    "name": "Rogue Syndicate (foundation)",
+    "image": "/assets/cards/subclass/rogue-syndicate-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "rogue-syndicate-(mastery)",
+    "name": "Rogue Syndicate (mastery)",
+    "image": "/assets/cards/subclass/rogue-syndicate-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "rogue-syndicate-(specialization)",
+    "name": "Rogue Syndicate (specialization)",
+    "image": "/assets/cards/subclass/rogue-syndicate-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "seraph-divine-wielder-(foundation)",
+    "name": "Seraph Divine Wielder (foundation)",
+    "image": "/assets/cards/subclass/seraph-divine-wielder-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "seraph-divine-wielder-(mastery)",
+    "name": "Seraph Divine Wielder (mastery)",
+    "image": "/assets/cards/subclass/seraph-divine-wielder-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "seraph-divine-wielder-(specialization)",
+    "name": "Seraph Divine Wielder (specialization)",
+    "image": "/assets/cards/subclass/seraph-divine-wielder-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "seraph-winged-sentinel-(foundation)",
+    "name": "Seraph Winged Sentinel (foundation)",
+    "image": "/assets/cards/subclass/seraph-winged-sentinel-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "seraph-winged-sentinel-(mastery)",
+    "name": "Seraph Winged Sentinel (mastery)",
+    "image": "/assets/cards/subclass/seraph-winged-sentinel-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "seraph-winged-sentinel-(specialization)",
+    "name": "Seraph Winged Sentinel (specialization)",
+    "image": "/assets/cards/subclass/seraph-winged-sentinel-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "sorcerer-elemental-origin-(foundation)",
+    "name": "Sorcerer Elemental Origin (foundation)",
+    "image": "/assets/cards/subclass/sorcerer-elemental-origin-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "sorcerer-elemental-origin-(mastery)",
+    "name": "Sorcerer Elemental Origin (mastery)",
+    "image": "/assets/cards/subclass/sorcerer-elemental-origin-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "sorcerer-elemental-origin-(specialization)",
+    "name": "Sorcerer Elemental Origin (specialization)",
+    "image": "/assets/cards/subclass/sorcerer-elemental-origin-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "sorcerer-primal-origin-(foundation)",
+    "name": "Sorcerer Primal Origin (foundation)",
+    "image": "/assets/cards/subclass/sorcerer-primal-origin-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "sorcerer-primal-origin-(mastery)",
+    "name": "Sorcerer Primal Origin (mastery)",
+    "image": "/assets/cards/subclass/sorcerer-primal-origin-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "sorcerer-primal-origin-(specialization)",
+    "name": "Sorcerer Primal Origin (specialization)",
+    "image": "/assets/cards/subclass/sorcerer-primal-origin-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "warrior-call-of-the-brave-(foundation)",
+    "name": "Warrior Call Of The Brave (foundation)",
+    "image": "/assets/cards/subclass/warrior-call-of-the-brave-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "warrior-call-of-the-brave-(mastery)",
+    "name": "Warrior Call Of The Brave (mastery)",
+    "image": "/assets/cards/subclass/warrior-call-of-the-brave-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "warrior-call-of-the-brave-(specialization)",
+    "name": "Warrior Call Of The Brave (specialization)",
+    "image": "/assets/cards/subclass/warrior-call-of-the-brave-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "warrior-call-of-the-slayer-(foundation)",
+    "name": "Warrior Call Of The Slayer (foundation)",
+    "image": "/assets/cards/subclass/warrior-call-of-the-slayer-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "warrior-call-of-the-slayer-(mastery)",
+    "name": "Warrior Call Of The Slayer (mastery)",
+    "image": "/assets/cards/subclass/warrior-call-of-the-slayer-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "warrior-call-of-the-slayer-(specialization)",
+    "name": "Warrior Call Of The Slayer (specialization)",
+    "image": "/assets/cards/subclass/warrior-call-of-the-slayer-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "wizard-school-of-knowledge-(foundation)",
+    "name": "Wizard School Of Knowledge (foundation)",
+    "image": "/assets/cards/subclass/wizard-school-of-knowledge-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "wizard-school-of-knowledge-(mastery)",
+    "name": "Wizard School Of Knowledge (mastery)",
+    "image": "/assets/cards/subclass/wizard-school-of-knowledge-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "wizard-school-of-knowledge-(specialization)",
+    "name": "Wizard School Of Knowledge (specialization)",
+    "image": "/assets/cards/subclass/wizard-school-of-knowledge-(specialization).png",
+    "type": "subclass"
+  },
+  {
+    "id": "wizard-school-of-war-(foundation)",
+    "name": "Wizard School Of War (foundation)",
+    "image": "/assets/cards/subclass/wizard-school-of-war-(foundation).png",
+    "type": "subclass"
+  },
+  {
+    "id": "wizard-school-of-war-(mastery)",
+    "name": "Wizard School Of War (mastery)",
+    "image": "/assets/cards/subclass/wizard-school-of-war-(mastery).png",
+    "type": "subclass"
+  },
+  {
+    "id": "wizard-school-of-war-(specialization)",
+    "name": "Wizard School Of War (specialization)",
+    "image": "/assets/cards/subclass/wizard-school-of-war-(specialization).png",
+    "type": "subclass"
+  }
+]
