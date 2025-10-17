@@ -331,7 +331,22 @@ function MixedAncestryWizard({ onComplete, onCancel }) {
               {/* Selected Features Summary */}
               {(feature1 || feature2) && (
                 <div className="bg-slate-800 border-2 border-dagger-gold rounded-lg p-6 max-w-3xl mx-auto">
-                  <h3 className="text-lg font-bold text-amber-400 mb-3">Selected Features:</h3>
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="text-lg font-bold text-amber-400">Selected Features:</h3>
+                    <button
+                      onClick={() => {
+                        setFeature1(null)
+                        setFeature2(null)
+                      }}
+                      className="text-sm text-slate-400 hover:text-slate-200 transition-colors flex items-center gap-1"
+                      title="Clear selection"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                      Clear Selection
+                    </button>
+                  </div>
                   <div className="space-y-2">
                     {feature1 && (
                       <div className="flex items-start gap-2">
